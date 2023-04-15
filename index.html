@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Space Invaders</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Space Invaders!</h1>
+            <div class="score">
+                <p>Score: <span id="score">00</span></p>
+                <p>High Score: <span id="highScore">00</span></p>
+            </div>
+        </div>
+        <div class="gameContainer">
+            <div id="gameBoard">
+                <!-- <div class="missile missile-1"></div> -->
+                <div class="player head"></div>
+                <div class="player body"></div>
+                <div class="player body"></div>
+                <div class="player body"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="ArrowUp">▲</button>
+            <button id="ArrowDown">▼</button>
+            <button id="ArrowLeft">◄</button>
+            <button id="ArrowRight">►</button>
+        </div>
+    </div>
+    </div>
+
+    <button id="restartGame">Start Game</button>
+</body>
+
+</html>

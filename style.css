@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgb(114 255 235) 50%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+    padding-block: 15px;
+}
+
+h1 {
+    border-bottom: 2px solid gray;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.score p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.score p span {
+    font-weight: 600;
+}
+
+.gameContainer {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+
+#gameBoard {
+    height: 100%;
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+}
+
+.ship {
+    background-color: firebrick;
+    border-radius: 50%;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.missile {
+    background-color: cornflowerblue;
+    border-radius: 50% 50% 0 0;
+    margin: 2px 4px;
+    border: 1px solid yellow;
+}
+
+.none {
+    display: none;
+}
+
+.player {
+    background-color: #5c748d;
+}
+
+.player.head {
+    border-radius: 50% 50% 0 0;
+    border-top: 1.2px solid white;
+    border-left: 1.2px solid white;
+    border-right: 1.2px solid white;
+    /* background-color: ; */
+}
+
+.player.body {
+    border-bottom: 1.2px solid white;
+}
+
+.player.body:nth-child(2) {
+    border-top-left-radius: 50%;
+
+    border-top: 1.2px solid white;
+    border-left: 1.2px solid white;
+}
+
+.player.body:nth-child(4) {
+    border-top-right-radius: 50%;
+
+    border-top: 1.2px solid white;
+    border-right: 1.2px solid white;
+}
+
+
+.controls{
+    display: none;
+    gap: 2px;
+}
+
+@media (max-width: 500px){
+    .controls{
+        display: flex;
+    }
+}
+
+.controls button{
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#restartGame {
+    width: 180px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#restartGame:hover {
+    cursor: pointer;
+}
+
+#restartGame:active {
+    width: 160px;
+    font-size: 14px;
+    margin-top: 22px;
+}
