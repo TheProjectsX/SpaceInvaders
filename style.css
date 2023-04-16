@@ -13,6 +13,13 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media (width < 450px){
+    body{
+       justify-content: flex-start;
+       padding-top: 10%;
+    }
+}
+
 .header {
     background: rgb(0, 212, 255);
     background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgb(114 255 235) 50%, rgba(0, 212, 255, 1) 100%);
