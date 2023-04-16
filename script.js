@@ -87,11 +87,11 @@ let gameLevel = 0;
 // Check and Set game High Score
 function setHighScore(check) {
     if (!(check)) {
-        currentHighScore = localStorage.getItem("highScore") ?? 0;
+        currentHighScore = localStorage.getItem("spaceInvadersHighScore") ?? 0;
     } else {
         if (currentScore > currentHighScore) {
             currentHighScore = currentScore;
-            localStorage.setItem("highScore", currentHighScore);
+            localStorage.setItem("spaceInvadersHighScore", currentHighScore);
         }
     }
 
